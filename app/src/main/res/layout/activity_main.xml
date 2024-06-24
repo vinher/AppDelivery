@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:fontFamily="@font/indigo_daisy"
+            android:textSize="50sp"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="25dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingresa usuario y contraseña"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="25dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Email"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/edit_text_custom"
+            android:layout_marginTop="50dp"
+            android:textSize="15sp"
+            android:inputType="textEmailAddress"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Password"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/edit_text_custom"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:inputType="textPassword"/>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp">
+        <Button
+            android:id="@+id/register_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Iniciar Sesión"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="@color/green"
+            android:layout_marginBottom="20dp"
+            />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_arrow"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registrate"/>
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
